@@ -5,7 +5,7 @@ import { yDocToProsemirrorJSON, prosemirrorJSONToYXmlFragment } from 'y-prosemir
 import * as Y from 'yjs'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export function yDocToJSON(ydoc: Y.Doc, pmSchema: Schema): any {
+export function yDocToJSON(ydoc: Y.Doc): any {
   const yXmlFragment = ydoc.getXmlFragment('content')
 
   console.log('yXmlFragment', yXmlFragment)

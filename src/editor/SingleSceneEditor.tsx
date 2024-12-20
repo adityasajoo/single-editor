@@ -31,7 +31,7 @@ export const SingleSceneEditor: React.FC = () => {
 
     console.log('mainYDoc', mainYDoc.getSubdocs());
     // Convert main doc to JSON
-    const mainJson = yDocToJSON(mainYDoc, pmSchema)
+    const mainJson = yDocToJSON(mainYDoc)
     const sceneJson = extractSceneByIndex(mainJson, sceneIndex)
 
     if (!sceneJson.content || sceneJson.content.length === 0) {
