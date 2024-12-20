@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState, useEffect, useRef } from 'react';
-import { useEditor, EditorContent, Editor } from '@tiptap/react';
+import { Editor, EditorContent, useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
+import { useEffect, useRef, useState } from 'react';
 
 const Tiptap = () => {
     const [paragraphs, setParagraphs] = useState<string[]>([]);
